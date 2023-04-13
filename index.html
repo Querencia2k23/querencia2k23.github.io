@@ -13,53 +13,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     
     <title>Querencia</title>
-  <script type="module" crossorigin src="/assets/index-5393820d.js"></script>
+  <script type="module" crossorigin src="/assets/index-2d564d5a.js"></script>
   <link rel="stylesheet" href="/assets/index-92dc532f.css">
 </head>
 
 <body>
-    <div class="m-3 m-lg-5" style="height: 100vh">
+    <div class="m-3 m-lg-5">
         <div style="height: 10vh"></div>
-        <div class="card p-3 visually-hidden" id="homeCard1">
-            <form class="row g-3 needs-validation" novalidate id="serialForm">
-                <div class="card-title text-center fw-bold fs-4">Welcome</div>
-                <div class="card-title text-center fw-bold">
-                    Your Internship Serial Number
-                </div>
-                <div class="card-body">
-                    <div class="form-floating mb-3">
-                        <input type="number" id="serialFormInput" placeholder="1-219" class="form-control" min="1" max="219" required />
-                        <label for="serialFormInput">Serial Number</label>
-                        <div class="valid-feedback">Looks good!</div>
-                        <div class="invalid-feedback">Please Enter between 1 to 219.</div>
+        <div style="height: 75vh" id="firstContainer">
+            <div class="card p-3 visually-hidden" id="homeCard1">
+                <form class="row g-3 needs-validation" novalidate id="serialForm">
+                    <div class="card-title text-center fw-bold fs-4">Welcome</div>
+                    <div class="card-title text-center fw-bold">
+                        Your Internship Serial Number
                     </div>
-                    <div class="row justify-content-center">
-                        <button class="btn btn-primary mt-5" type="submit">
-                Find Yourself
-              </button>
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="number" id="serialFormInput" placeholder="1-219" class="form-control" min="1" max="219" required />
+                            <label for="serialFormInput">Serial Number</label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">
+                                Please Enter between 1 to 219.
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-primary mt-5" type="submit">
+                  Find Yourself
+                </button>
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
-        <div class="card p-3 visually-hidden" id="homeCard2">
-            <form class="row g-3 needs-validation" novalidate id="passForm">
-                <div class="card-title text-center fw-bold fs-4">Welcome</div>
-                <div class="card-title text-center fw-bold fs-4" id="internName"></div>
-                <div class="card-title text-center fw-bold" id="createOrEnterText"></div>
-                <div class="card-body">
-                    <div class="form-floating mb-3">
-                        <input type="password" id="passFormInput" class="form-control" minlength="6" required />
-                        <label for="passFormInput">Password</label>
-                        <div class="valid-feedback">Looks good!</div>
-                        <div class="invalid-feedback">Length must be > 6 character</div>
+                </form>
+            </div>
+            <div class="card p-3 visually-hidden" id="homeCard2">
+                <form class="row g-3 needs-validation" novalidate id="passForm">
+                    <div class="card-title text-center fw-bold fs-4">Welcome</div>
+                    <div class="card-title text-center fw-bold fs-4" id="internName"></div>
+                    <div class="card-title text-center fw-bold" id="createOrEnterText"></div>
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="password" id="passFormInput" class="form-control" minlength="6" required />
+                            <label for="passFormInput">Password</label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Length must be > 6 character</div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-primary mt-5" type="submit">
+                  Let's GO
+                </button>
+                        </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <button class="btn btn-primary mt-5" type="submit">
-                Let's GO
-              </button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <div class="card p-3" id="internCard">
             <form class="row g-3 needs-validation justify-content-center" novalidate id="internForm">
